@@ -1,0 +1,1690 @@
+Tue Mar  1 11:04:22 EST 2022
+Slurm nodes: evc5
+You were assigned 1 gpu(s)
+Please run `conda env list` to see a list of all available environments. Use
+`source activate <env>` to activate the environment '<env>'. 
+
+Currently Loaded Modules:
+  1) anaconda/anaconda3
+
+ 
+
+	[4mGPU0	mlx5_0	CPU Affinity	NUMA Affinity[0m
+GPU0	 X 	SYS	0,2,4,6	0-1
+mlx5_0	SYS	 X 		
+
+Legend:
+
+  X    = Self
+  SYS  = Connection traversing PCIe as well as the SMP interconnect between NUMA nodes (e.g., QPI/UPI)
+  NODE = Connection traversing PCIe as well as the interconnect between PCIe Host Bridges within a NUMA node
+  PHB  = Connection traversing PCIe as well as a PCIe Host Bridge (typically the CPU)
+  PXB  = Connection traversing multiple PCIe bridges (without traversing the PCIe Host Bridge)
+  PIX  = Connection traversing at most a single PCIe bridge
+  NV#  = Connection traversing a bonded set of # NVLinks
+
+1.1.0
+
+Namespace(arch='vgg16', checkpoint='checkpoint', data_avail=10, dataset='cifar100', epochs=90, gamma=0.1, include_t1_data=False, jobid='126874', logs='logs', lr=0.01, manualSeed=3868, momentum=0.9, mse_weight=0.01, schedule=[30, 60], task_set='vehicles10-large_animals10-reset80', test_batch=100, train_batch=128, weight_decay=0.0005, workers=4)
+==> Preparing dataset cifar100
+Files already downloaded and verified
+Testing...
+
+Test loss: 2.2105 
+Val accuracy: 70.25%
+==> Preparing dataset cifar100
+Files already downloaded and verified
+Testing...
+
+Test loss: 3.5464 
+Val accuracy: 49.90%
+==> Preparing dataset cifar100
+Files already downloaded and verified
+Testing...
+
+Test loss: 8.7389 
+Val accuracy: 41.00%
+
+Excluding Task 1 data for training
+==> Preparing dataset cifar100
+Files already downloaded and verified
+==> Preparing dataset cifar100
+Files already downloaded and verified
+==> Preparing dataset cifar100
+Files already downloaded and verified
+==> Preparing dataset cifar100
+Files already downloaded and verified
+    Total params: 14.77M
+
+Epoch: [1 | 90] LR: 0.010000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09040090441703796, 0.0, 0.0, 3.853267014026642]
+Testing on Task A:  [0.005153501033782959, 66.1375, 88.55, 169.4576219558716]
+Testing on Task B:  [0.016327404975891115, 51.8, 90.6, 197.94449615478516]
+Testing on Task C:  [0.015470433235168456, 48.8, 92.7, 264.1538391113281]
+Best Acc:  66.1375
+
+Epoch: [2 | 90] LR: 0.010000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.08959817886352539, 0.0, 0.0, 1.8689054697752]
+Testing on Task A:  [0.004930344223976135, 66.05, 88.9125, 134.1930100440979]
+Testing on Task B:  [0.015659427642822264, 50.9, 89.7, 164.72592849731444]
+Testing on Task C:  [0.016555476188659667, 52.6, 91.2, 163.67658233642578]
+Best Acc:  66.1375
+
+Epoch: [3 | 90] LR: 0.010000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.08647421002388, 0.0, 0.0, 1.55832439661026]
+Testing on Task A:  [0.00485014021396637, 66.775, 89.325, 127.39125833511352]
+Testing on Task B:  [0.014717960357666015, 51.3, 90.6, 156.01664810180665]
+Testing on Task C:  [0.015721392631530762, 52.9, 93.5, 144.36460723876954]
+Best Acc:  66.775
+
+Epoch: [4 | 90] LR: 0.010000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09053784608840942, 0.0, 0.0, 1.3806244879961014]
+Testing on Task A:  [0.004739585518836975, 67.175, 89.45, 126.08305740356445]
+Testing on Task B:  [0.01721765995025635, 53.6, 90.9, 149.27125930786133]
+Testing on Task C:  [0.016844797134399413, 56.7, 94.9, 132.27715530395508]
+Best Acc:  67.175
+
+Epoch: [5 | 90] LR: 0.010000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09276679158210754, 0.0, 0.0, 1.181316390633583]
+Testing on Task A:  [0.004959100484848022, 67.425, 89.6625, 126.8644006729126]
+Testing on Task B:  [0.015341043472290039, 54.1, 91.8, 149.0726203918457]
+Testing on Task C:  [0.017431235313415526, 58.1, 94.9, 131.89640884399415]
+Best Acc:  67.425
+
+Epoch: [6 | 90] LR: 0.010000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09399852156639099, 0.0, 0.0, 1.021876260638237]
+Testing on Task A:  [0.004969799518585205, 67.45, 89.6875, 130.38711919784546]
+Testing on Task B:  [0.015673327445983886, 55.4, 91.7, 152.98727416992188]
+Testing on Task C:  [0.018347811698913575, 59.4, 95.0, 133.43413467407225]
+Best Acc:  67.45
+
+Epoch: [7 | 90] LR: 0.010000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.0929102897644043, 0.0, 0.0, 0.9546476677060127]
+Testing on Task A:  [0.004910784959793091, 67.725, 89.6125, 137.2032914161682]
+Testing on Task B:  [0.015304470062255859, 54.8, 92.3, 159.0330696105957]
+Testing on Task C:  [0.01687357425689697, 59.0, 95.0, 137.78071060180665]
+Best Acc:  67.725
+
+Epoch: [8 | 90] LR: 0.010000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09367367625236511, 0.0, 0.0, 0.8049134835600853]
+Testing on Task A:  [0.00486941933631897, 68.175, 89.8125, 140.89386110305787]
+Testing on Task B:  [0.015303754806518554, 56.8, 91.9, 164.3377670288086]
+Testing on Task C:  [0.015975427627563477, 61.0, 95.6, 136.89791259765624]
+Best Acc:  68.175
+
+Epoch: [9 | 90] LR: 0.010000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09278887510299683, 0.0, 0.0, 0.7371788844466209]
+Testing on Task A:  [0.005034583806991577, 68.275, 89.8375, 149.89135341644288]
+Testing on Task B:  [0.015109872817993164, 56.7, 91.9, 175.51855087280273]
+Testing on Task C:  [0.017576766014099122, 60.9, 95.1, 147.51930541992186]
+Best Acc:  68.275
+
+Epoch: [10 | 90] LR: 0.010000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09409058094024658, 0.0, 0.0, 0.6203837767243385]
+Testing on Task A:  [0.005062317848205567, 68.2375, 89.7625, 155.6370096206665]
+Testing on Task B:  [0.015037083625793457, 57.5, 91.6, 177.2898323059082]
+Testing on Task C:  [0.01543598175048828, 61.0, 95.3, 153.24440307617186]
+Best Acc:  68.275
+
+Epoch: [11 | 90] LR: 0.010000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09290003776550293, 0.0, 0.0, 0.5281651057302952]
+Testing on Task A:  [0.0050711572170257565, 68.3125, 89.9625, 161.84116287231444]
+Testing on Task B:  [0.015090870857238769, 57.0, 93.0, 183.82158203125]
+Testing on Task C:  [0.015218448638916016, 62.7, 95.2, 156.00927276611327]
+Best Acc:  68.3125
+
+Epoch: [12 | 90] LR: 0.010000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.0928819477558136, 0.0, 0.0, 0.4670874811708927]
+Testing on Task A:  [0.0050889462232589725, 68.6, 89.975, 166.2287362098694]
+Testing on Task B:  [0.017174291610717773, 58.2, 93.2, 190.16417083740234]
+Testing on Task C:  [0.015089988708496094, 61.9, 95.8, 157.86096267700196]
+Best Acc:  68.6
+
+Epoch: [13 | 90] LR: 0.010000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09209346771240234, 0.0, 0.0, 0.4113164059817791]
+Testing on Task A:  [0.00505448579788208, 68.3375, 89.725, 172.4254035949707]
+Testing on Task B:  [0.017066121101379395, 58.6, 92.2, 194.23325958251954]
+Testing on Task C:  [0.015459060668945312, 62.3, 94.9, 165.93286514282227]
+Best Acc:  68.6
+
+Epoch: [14 | 90] LR: 0.010000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09146234393119812, 0.0, 0.0, 0.39610373228788376]
+Testing on Task A:  [0.00505034327507019, 68.525, 89.975, 176.5146023750305]
+Testing on Task B:  [0.017372870445251466, 58.4, 92.5, 201.6565170288086]
+Testing on Task C:  [0.01748926639556885, 61.7, 95.6, 163.36084518432617]
+Best Acc:  68.6
+
+Epoch: [15 | 90] LR: 0.010000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09090951085090637, 0.0, 0.0, 0.33989324048161507]
+Testing on Task A:  [0.005076450109481811, 68.6375, 89.925, 179.05984964370728]
+Testing on Task B:  [0.016681313514709473, 58.1, 92.7, 206.61993713378905]
+Testing on Task C:  [0.01713080406188965, 62.6, 95.7, 172.70952301025392]
+Best Acc:  68.6375
+
+Epoch: [16 | 90] LR: 0.010000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.08998581767082214, 0.0, 0.0, 0.29110084287822247]
+Testing on Task A:  [0.005068391561508179, 68.3625, 89.8, 183.58957347869872]
+Testing on Task B:  [0.015869569778442384, 58.7, 92.8, 209.68824615478516]
+Testing on Task C:  [0.017679643630981446, 62.9, 95.6, 173.8789535522461]
+Best Acc:  68.6375
+
+Epoch: [17 | 90] LR: 0.010000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.08943787217140198, 0.0, 0.0, 0.3095537815243006]
+Testing on Task A:  [0.0049701154232025145, 68.3875, 89.9, 184.47471809387207]
+Testing on Task B:  [0.01692516803741455, 58.9, 93.1, 208.96280059814453]
+Testing on Task C:  [0.016970729827880858, 62.5, 96.0, 171.60655364990234]
+Best Acc:  68.6375
+
+Epoch: [18 | 90] LR: 0.010000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.08878391981124878, 0.0, 0.0, 0.3039380442351103]
+Testing on Task A:  [0.004849809408187866, 68.6125, 89.8625, 185.2938512802124]
+Testing on Task B:  [0.017119646072387695, 58.9, 92.9, 206.8828887939453]
+Testing on Task C:  [0.01658320426940918, 61.8, 96.0, 178.9230712890625]
+Best Acc:  68.6375
+
+Epoch: [19 | 90] LR: 0.010000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09233510494232178, 0.0, 0.0, 0.27924122102558613]
+Testing on Task A:  [0.004795894026756287, 68.775, 90.0625, 185.36845445632935]
+Testing on Task B:  [0.01702616214752197, 59.9, 92.9, 209.4369918823242]
+Testing on Task C:  [0.016913652420043945, 62.1, 95.7, 174.83793182373046]
+Best Acc:  68.775
+
+Epoch: [20 | 90] LR: 0.010000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09332284331321716, 0.0, 0.0, 0.24392224103212357]
+Testing on Task A:  [0.004815638065338135, 68.7125, 89.925, 186.1110062599182]
+Testing on Task B:  [0.017318010330200195, 58.3, 92.3, 211.1087844848633]
+Testing on Task C:  [0.01706376075744629, 63.1, 95.7, 175.69510192871093]
+Best Acc:  68.775
+
+Epoch: [21 | 90] LR: 0.010000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09203001856803894, 0.0, 0.0, 0.22212882339954376]
+Testing on Task A:  [0.004907873272895813, 68.975, 90.0, 189.67686014175416]
+Testing on Task B:  [0.01538381576538086, 58.2, 92.9, 218.26293334960937]
+Testing on Task C:  [0.01707768440246582, 62.9, 96.0, 177.51436309814454]
+Best Acc:  68.975
+
+Epoch: [22 | 90] LR: 0.010000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09203171730041504, 0.0, 0.0, 0.21105002239346504]
+Testing on Task A:  [0.00496000349521637, 68.725, 89.925, 191.52656745910645]
+Testing on Task B:  [0.015092849731445312, 58.2, 92.8, 216.14461975097657]
+Testing on Task C:  [0.016812705993652345, 62.4, 95.8, 178.08737182617188]
+Best Acc:  68.975
+
+Epoch: [23 | 90] LR: 0.010000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09407299757003784, 0.0, 0.0, 0.206262381747365]
+Testing on Task A:  [0.00503593385219574, 68.65, 90.0, 192.91021499633788]
+Testing on Task B:  [0.015213871002197265, 58.6, 92.7, 219.0834182739258]
+Testing on Task C:  [0.015356206893920898, 64.1, 96.0, 174.51842346191407]
+Best Acc:  68.975
+
+Epoch: [24 | 90] LR: 0.010000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09312546253204346, 0.0, 0.0, 0.1862397976219654]
+Testing on Task A:  [0.004969334602355957, 68.6875, 90.0375, 194.52152462005614]
+Testing on Task B:  [0.015264511108398438, 58.7, 92.2, 226.86748657226562]
+Testing on Task C:  [0.01515185832977295, 64.4, 96.1, 173.76638641357422]
+Best Acc:  68.975
+
+Epoch: [25 | 90] LR: 0.010000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09502080082893372, 0.0, 0.0, 0.1946151666343212]
+Testing on Task A:  [0.005238032341003418, 68.7875, 90.0875, 193.54904823303224]
+Testing on Task B:  [0.0159198522567749, 59.1, 92.7, 222.51927337646484]
+Testing on Task C:  [0.015098285675048829, 64.4, 95.9, 176.52965850830077]
+Best Acc:  68.975
+
+Epoch: [26 | 90] LR: 0.010000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09183025360107422, 0.0, 0.0, 0.2015358842909336]
+Testing on Task A:  [0.0051831364631652836, 68.775, 90.2125, 192.1985312461853]
+Testing on Task B:  [0.015797948837280272, 59.3, 93.1, 221.09044799804687]
+Testing on Task C:  [0.014470672607421875, 63.3, 96.0, 180.82981567382814]
+Best Acc:  68.975
+
+Epoch: [27 | 90] LR: 0.010000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09156274795532227, 0.0, 0.0, 0.1726307850331068]
+Testing on Task A:  [0.005100911855697632, 68.6125, 90.125, 195.40502796173095]
+Testing on Task B:  [0.01774742603302002, 59.4, 93.2, 222.63298950195312]
+Testing on Task C:  [0.01624588966369629, 63.5, 95.5, 183.4872055053711]
+Best Acc:  68.975
+
+Epoch: [28 | 90] LR: 0.010000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.08836743235588074, 0.0, 0.0, 0.1616116864606738]
+Testing on Task A:  [0.005090978741645813, 68.5375, 90.0375, 195.8391201019287]
+Testing on Task B:  [0.017266607284545897, 58.5, 92.9, 223.502587890625]
+Testing on Task C:  [0.017607593536376955, 63.1, 96.2, 173.65531311035156]
+Best Acc:  68.975
+
+Epoch: [29 | 90] LR: 0.010000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09021589159965515, 0.0, 0.0, 0.1559515744447708]
+Testing on Task A:  [0.0051352858543396, 68.65, 90.275, 196.46854410171508]
+Testing on Task B:  [0.017154455184936523, 59.2, 93.3, 224.87004852294922]
+Testing on Task C:  [0.018978404998779296, 63.3, 96.2, 176.6500686645508]
+Best Acc:  68.975
+
+Epoch: [30 | 90] LR: 0.010000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09040683507919312, 0.0, 0.0, 0.14551337342709303]
+Testing on Task A:  [0.005058369040489197, 68.6625, 90.275, 197.7087119102478]
+Testing on Task B:  [0.016101717948913574, 59.2, 93.0, 228.1288284301758]
+Testing on Task C:  [0.01749706268310547, 63.5, 96.0, 182.23529510498048]
+Best Acc:  68.975
+New lr for parameter group: 0  ->  0.0001
+New lr for parameter group: 1  ->  0.001
+
+Epoch: [31 | 90] LR: 0.001000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.08844345808029175, 0.0, 0.0, 0.14904729556292295]
+Testing on Task A:  [0.004976183176040649, 68.6375, 90.225, 197.68345556259155]
+Testing on Task B:  [0.017046284675598145, 59.2, 93.0, 227.66011810302734]
+Testing on Task C:  [0.016458654403686525, 63.6, 96.0, 181.51605224609375]
+Best Acc:  68.975
+
+Epoch: [32 | 90] LR: 0.001000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09079042077064514, 0.0, 0.0, 0.15585306100547314]
+Testing on Task A:  [0.0048510700464248655, 68.6125, 90.2, 197.6169147491455]
+Testing on Task B:  [0.017137026786804198, 59.5, 93.2, 226.82882843017578]
+Testing on Task C:  [0.01654963493347168, 63.7, 96.1, 180.1852020263672]
+Best Acc:  68.975
+
+Epoch: [33 | 90] LR: 0.001000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.08912605047225952, 0.0, 0.0, 0.1374464463442564]
+Testing on Task A:  [0.004814049601554871, 68.625, 90.1875, 197.65433263778687]
+Testing on Task B:  [0.016858863830566406, 59.6, 93.1, 226.22183380126953]
+Testing on Task C:  [0.017289066314697267, 63.7, 96.1, 179.0710235595703]
+Best Acc:  68.975
+
+Epoch: [34 | 90] LR: 0.001000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09408894181251526, 0.0, 0.0, 0.14364827796816826]
+Testing on Task A:  [0.004717251658439637, 68.6625, 90.2, 197.67586421966553]
+Testing on Task B:  [0.01722385883331299, 59.5, 93.1, 225.66089935302733]
+Testing on Task C:  [0.017208242416381837, 63.9, 96.1, 178.49677581787108]
+Best Acc:  68.975
+
+Epoch: [35 | 90] LR: 0.001000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09297022223472595, 0.0, 0.0, 0.1420996468514204]
+Testing on Task A:  [0.004870745539665222, 68.7, 90.2, 197.7212818145752]
+Testing on Task B:  [0.017455172538757325, 59.9, 93.2, 225.51970367431642]
+Testing on Task C:  [0.017820239067077637, 63.9, 96.0, 178.16277923583985]
+Best Acc:  68.975
+
+Epoch: [36 | 90] LR: 0.001000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.0942697823047638, 0.0, 0.0, 0.1464156974107027]
+Testing on Task A:  [0.004940533638000488, 68.675, 90.2375, 197.77586622238158]
+Testing on Task B:  [0.014101338386535645, 59.6, 93.0, 225.59483337402344]
+Testing on Task C:  [0.01677861213684082, 64.0, 96.0, 178.42114715576173]
+Best Acc:  68.975
+
+Epoch: [37 | 90] LR: 0.001000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09257015585899353, 0.0, 0.0, 0.1429534601047635]
+Testing on Task A:  [0.00495535135269165, 68.7, 90.25, 197.87881937026978]
+Testing on Task B:  [0.015143060684204101, 59.5, 93.1, 225.9654541015625]
+Testing on Task C:  [0.01593317985534668, 63.8, 96.0, 178.7055465698242]
+Best Acc:  68.975
+
+Epoch: [38 | 90] LR: 0.001000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09293738007545471, 0.0, 0.0, 0.14168912917375565]
+Testing on Task A:  [0.005083504319190979, 68.7, 90.25, 197.9960594177246]
+Testing on Task B:  [0.01509871482849121, 59.2, 93.2, 226.18067932128906]
+Testing on Task C:  [0.01494007110595703, 64.2, 96.0, 179.1338897705078]
+Best Acc:  68.975
+
+Epoch: [39 | 90] LR: 0.001000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09288409352302551, 0.0, 0.0, 0.14531548973172903]
+Testing on Task A:  [0.0050719380378723145, 68.7375, 90.275, 197.99989986419678]
+Testing on Task B:  [0.015161228179931641, 59.7, 93.1, 226.42562408447264]
+Testing on Task C:  [0.01511077880859375, 63.9, 96.0, 179.26309967041016]
+Best Acc:  68.975
+
+Epoch: [40 | 90] LR: 0.001000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.08951306343078613, 0.0, 0.0, 0.15232550632208586]
+Testing on Task A:  [0.004966956377029419, 68.725, 90.275, 197.81008644104003]
+Testing on Task B:  [0.016357040405273436, 59.9, 93.2, 226.35063629150392]
+Testing on Task C:  [0.01512613296508789, 63.8, 96.1, 179.2218765258789]
+Best Acc:  68.975
+
+Epoch: [41 | 90] LR: 0.001000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09225133061408997, 0.0, 0.0, 0.15152788534760475]
+Testing on Task A:  [0.005079090595245361, 68.775, 90.2625, 197.7434796333313]
+Testing on Task B:  [0.01613168716430664, 59.7, 93.3, 226.33976135253906]
+Testing on Task C:  [0.01769113540649414, 63.7, 96.1, 178.5764358520508]
+Best Acc:  68.975
+
+Epoch: [42 | 90] LR: 0.001000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.08857005834579468, 0.0, 0.0, 0.13551297783851624]
+Testing on Task A:  [0.00512714684009552, 68.7625, 90.225, 197.67412948608398]
+Testing on Task B:  [0.01737699508666992, 59.6, 93.3, 226.2542236328125]
+Testing on Task C:  [0.0162811279296875, 63.5, 96.0, 177.93675079345704]
+Best Acc:  68.975
+
+Epoch: [43 | 90] LR: 0.001000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.08807876706123352, 0.0, 0.0, 0.12940541189163923]
+Testing on Task A:  [0.005045875906944275, 68.8125, 90.2375, 197.7209069252014]
+Testing on Task B:  [0.01627936363220215, 59.9, 93.3, 226.22674255371095]
+Testing on Task C:  [0.015531134605407716, 63.6, 96.0, 178.07311248779297]
+Best Acc:  68.975
+
+Epoch: [44 | 90] LR: 0.001000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09032678604125977, 0.0, 0.0, 0.1391345113515854]
+Testing on Task A:  [0.005088526010513306, 68.7875, 90.2375, 197.78833923339843]
+Testing on Task B:  [0.016148877143859864, 60.1, 93.2, 225.99147033691406]
+Testing on Task C:  [0.016555595397949218, 63.5, 96.1, 178.29185791015624]
+Best Acc:  68.975
+
+Epoch: [45 | 90] LR: 0.001000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09050998091697693, 0.0, 0.0, 0.14169075060635805]
+Testing on Task A:  [0.004977166652679443, 68.775, 90.2125, 197.9477728843689]
+Testing on Task B:  [0.016849756240844727, 60.2, 93.2, 225.8176010131836]
+Testing on Task C:  [0.01763904094696045, 63.7, 96.1, 178.20865936279296]
+Best Acc:  68.975
+
+Epoch: [46 | 90] LR: 0.001000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09022966027259827, 0.0, 0.0, 0.1269922200590372]
+Testing on Task A:  [0.004767692089080811, 68.7625, 90.2375, 198.11453857421876]
+Testing on Task B:  [0.017034626007080077, 60.0, 93.2, 225.7247756958008]
+Testing on Task C:  [0.017185521125793458, 63.9, 96.1, 178.40766448974608]
+Best Acc:  68.975
+
+Epoch: [47 | 90] LR: 0.001000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.0921584963798523, 0.0, 0.0, 0.13819994032382965]
+Testing on Task A:  [0.004821169376373291, 68.7875, 90.2125, 198.16236705780028]
+Testing on Task B:  [0.017136645317077637, 59.6, 93.2, 225.66795043945314]
+Testing on Task C:  [0.01699509620666504, 63.7, 96.0, 178.54424133300782]
+Best Acc:  68.975
+
+Epoch: [48 | 90] LR: 0.001000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09224805235862732, 0.0, 0.0, 0.13690347597002983]
+Testing on Task A:  [0.004762867093086242, 68.7625, 90.2625, 198.1608832359314]
+Testing on Task B:  [0.01745305061340332, 59.6, 93.2, 225.63333892822266]
+Testing on Task C:  [0.01722595691680908, 63.7, 96.0, 178.73709869384766]
+Best Acc:  68.975
+
+Epoch: [49 | 90] LR: 0.001000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09051558375358582, 0.0, 0.0, 0.1390457022935152]
+Testing on Task A:  [0.005020561814308167, 68.7625, 90.225, 198.12440938949584]
+Testing on Task B:  [0.017700767517089842, 59.5, 93.1, 225.51614990234376]
+Testing on Task C:  [0.017374801635742187, 63.7, 96.0, 178.6211715698242]
+Best Acc:  68.975
+
+Epoch: [50 | 90] LR: 0.001000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.0929640531539917, 0.0, 0.0, 0.13337804842740297]
+Testing on Task A:  [0.004935893416404724, 68.825, 90.2375, 198.08486976623536]
+Testing on Task B:  [0.014186406135559082, 59.3, 93.1, 225.2932113647461]
+Testing on Task C:  [0.01657423973083496, 63.5, 96.0, 178.11265563964844]
+Best Acc:  68.975
+
+Epoch: [51 | 90] LR: 0.001000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09354442358016968, 0.0, 0.0, 0.13253366202116013]
+Testing on Task A:  [0.005030274391174316, 68.75, 90.2125, 198.13704175949096]
+Testing on Task B:  [0.014998745918273926, 59.4, 93.1, 225.23282165527343]
+Testing on Task C:  [0.016817688941955566, 63.6, 96.0, 178.35901641845703]
+Best Acc:  68.975
+
+Epoch: [52 | 90] LR: 0.001000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09416529536247253, 0.0, 0.0, 0.13097243383526802]
+Testing on Task A:  [0.005079144239425659, 68.7125, 90.2, 198.2350214958191]
+Testing on Task B:  [0.015130949020385743, 59.3, 93.1, 225.47144012451173]
+Testing on Task C:  [0.015172767639160156, 63.7, 96.0, 178.887646484375]
+Best Acc:  68.975
+
+Epoch: [53 | 90] LR: 0.001000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.0923951268196106, 0.0, 0.0, 0.13657253794372082]
+Testing on Task A:  [0.005147001147270203, 68.7125, 90.2, 198.39657764434816]
+Testing on Task B:  [0.015096163749694825, 59.4, 93.2, 225.71118774414063]
+Testing on Task C:  [0.015162968635559082, 63.9, 96.0, 179.61608428955077]
+Best Acc:  68.975
+
+Epoch: [54 | 90] LR: 0.001000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.0928022563457489, 0.0, 0.0, 0.12915895506739616]
+Testing on Task A:  [0.005042320489883423, 68.725, 90.1875, 198.37883834838868]
+Testing on Task B:  [0.017389488220214844, 59.6, 93.1, 225.84592895507814]
+Testing on Task C:  [0.015170788764953614, 64.0, 95.9, 179.9234176635742]
+Best Acc:  68.975
+
+Epoch: [55 | 90] LR: 0.001000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09008380770683289, 0.0, 0.0, 0.12864935211837292]
+Testing on Task A:  [0.005355328321456909, 68.7125, 90.2, 198.35327949523926]
+Testing on Task B:  [0.01750814914703369, 59.6, 93.1, 225.87039947509766]
+Testing on Task C:  [0.015480780601501464, 63.8, 96.0, 179.58104400634767]
+Best Acc:  68.975
+
+Epoch: [56 | 90] LR: 0.001000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09147384762763977, 0.0, 0.0, 0.13361370377242565]
+Testing on Task A:  [0.005084773898124695, 68.7125, 90.225, 198.39249582290648]
+Testing on Task B:  [0.016012406349182128, 59.4, 93.1, 225.89557647705078]
+Testing on Task C:  [0.016494250297546385, 63.7, 96.0, 179.4347885131836]
+Best Acc:  68.975
+
+Epoch: [57 | 90] LR: 0.001000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09106957912445068, 0.0, 0.0, 0.1270282482728362]
+Testing on Task A:  [0.0051248699426651, 68.725, 90.2125, 198.4515027999878]
+Testing on Task B:  [0.01553175449371338, 59.5, 93.2, 225.85447692871094]
+Testing on Task C:  [0.017724442481994628, 63.8, 96.0, 179.3867950439453]
+Best Acc:  68.975
+
+Epoch: [58 | 90] LR: 0.001000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.08776402473449707, 0.0, 0.0, 0.12370229791849852]
+Testing on Task A:  [0.005157682299613953, 68.725, 90.175, 198.5718240737915]
+Testing on Task B:  [0.017818689346313477, 59.4, 93.2, 225.63541107177736]
+Testing on Task C:  [0.01714770793914795, 63.7, 96.0, 179.7507064819336]
+Best Acc:  68.975
+
+Epoch: [59 | 90] LR: 0.001000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09090355038642883, 0.0, 0.0, 0.12489120103418827]
+Testing on Task A:  [0.005238088965415955, 68.7125, 90.15, 198.5625828742981]
+Testing on Task B:  [0.017887687683105467, 59.5, 93.3, 225.40375061035155]
+Testing on Task C:  [0.017556476593017577, 63.9, 96.0, 179.57708892822265]
+Best Acc:  68.975
+
+Epoch: [60 | 90] LR: 0.001000
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09036862850189209, 0.0, 0.0, 0.12503768596798182]
+Testing on Task A:  [0.0050026774406433105, 68.7125, 90.1375, 198.50357675552368]
+Testing on Task B:  [0.01630551815032959, 59.7, 93.3, 225.38509979248047]
+Testing on Task C:  [0.0168973445892334, 63.8, 96.0, 179.37198944091796]
+Best Acc:  68.975
+New lr for parameter group: 0  ->  1e-05
+New lr for parameter group: 1  ->  0.0001
+
+Epoch: [61 | 90] LR: 0.000100
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09087741374969482, 0.0, 0.0, 0.13113780226558447]
+Testing on Task A:  [0.004987180233001709, 68.7125, 90.125, 198.50669736862181]
+Testing on Task B:  [0.016983699798583985, 59.7, 93.3, 225.38921203613282]
+Testing on Task C:  [0.016374039649963378, 63.8, 96.0, 179.38497467041014]
+Best Acc:  68.975
+
+Epoch: [62 | 90] LR: 0.000100
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09182104468345642, 0.0, 0.0, 0.12694378290325403]
+Testing on Task A:  [0.004817551374435425, 68.7125, 90.125, 198.514080619812]
+Testing on Task B:  [0.016919851303100586, 59.8, 93.3, 225.39254455566407]
+Testing on Task C:  [0.0167694091796875, 63.7, 96.0, 179.40753631591798]
+Best Acc:  68.975
+
+Epoch: [63 | 90] LR: 0.000100
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09224861860275269, 0.0, 0.0, 0.1324580404907465]
+Testing on Task A:  [0.004782000184059143, 68.725, 90.1375, 198.51752367019654]
+Testing on Task B:  [0.017585086822509765, 59.8, 93.3, 225.3939193725586]
+Testing on Task C:  [0.01705446243286133, 63.7, 96.0, 179.43970794677733]
+Best Acc:  68.975
+
+Epoch: [64 | 90] LR: 0.000100
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09306976199150085, 0.0, 0.0, 0.12785974983125925]
+Testing on Task A:  [0.0048011839389801025, 68.725, 90.1375, 198.52048034667968]
+Testing on Task B:  [0.01693603992462158, 59.9, 93.3, 225.40325012207032]
+Testing on Task C:  [0.01711592674255371, 63.7, 96.0, 179.45737915039064]
+Best Acc:  68.975
+
+Epoch: [65 | 90] LR: 0.000100
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09238341450691223, 0.0, 0.0, 0.12773541454225779]
+Testing on Task A:  [0.004956069588661194, 68.7125, 90.1625, 198.52692012786866]
+Testing on Task B:  [0.015432596206665039, 59.8, 93.3, 225.4302719116211]
+Testing on Task C:  [0.01694183349609375, 63.7, 96.0, 179.4946258544922]
+Best Acc:  68.975
+
+Epoch: [66 | 90] LR: 0.000100
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09277215600013733, 0.0, 0.0, 0.12414786033332348]
+Testing on Task A:  [0.0050289899110794066, 68.7125, 90.1625, 198.53426036834716]
+Testing on Task B:  [0.015103793144226075, 59.8, 93.3, 225.45274658203124]
+Testing on Task C:  [0.01709775924682617, 63.7, 96.0, 179.50483093261718]
+Best Acc:  68.975
+
+Epoch: [67 | 90] LR: 0.000100
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09327736496925354, 0.0, 0.0, 0.1349844690412283]
+Testing on Task A:  [0.005145248770713806, 68.6875, 90.1625, 198.53694887161254]
+Testing on Task B:  [0.015039277076721192, 59.8, 93.3, 225.45232849121095]
+Testing on Task C:  [0.015581154823303222, 63.7, 96.0, 179.5242660522461]
+Best Acc:  68.975
+
+Epoch: [68 | 90] LR: 0.000100
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09350678324699402, 0.0, 0.0, 0.12365110497921705]
+Testing on Task A:  [0.004928171634674072, 68.7125, 90.1625, 198.53621683120727]
+Testing on Task B:  [0.015232658386230469, 59.8, 93.3, 225.41156463623048]
+Testing on Task C:  [0.014782261848449708, 63.7, 96.0, 179.4863708496094]
+Best Acc:  68.975
+
+Epoch: [69 | 90] LR: 0.000100
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09234854578971863, 0.0, 0.0, 0.13922301307320595]
+Testing on Task A:  [0.004965940117835998, 68.7125, 90.15, 198.54494190216064]
+Testing on Task B:  [0.01698613166809082, 59.8, 93.3, 225.41277618408202]
+Testing on Task C:  [0.015096473693847656, 63.7, 96.0, 179.5208511352539]
+Best Acc:  68.975
+
+Epoch: [70 | 90] LR: 0.000100
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09213313460350037, 0.0, 0.0, 0.12230554036796093]
+Testing on Task A:  [0.005035200715065002, 68.7, 90.1625, 198.54616661071776]
+Testing on Task B:  [0.017153000831604003, 59.8, 93.3, 225.42398986816406]
+Testing on Task C:  [0.015272879600524902, 63.7, 96.0, 179.53467559814453]
+Best Acc:  68.975
+
+Epoch: [71 | 90] LR: 0.000100
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.0914774239063263, 0.0, 0.0, 0.12602828536182642]
+Testing on Task A:  [0.00508999228477478, 68.7, 90.15, 198.54372968673707]
+Testing on Task B:  [0.016676664352416992, 59.8, 93.3, 225.4226333618164]
+Testing on Task C:  [0.01644163131713867, 63.7, 96.0, 179.48681030273437]
+Best Acc:  68.975
+
+Epoch: [72 | 90] LR: 0.000100
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09037810564041138, 0.0, 0.0, 0.1271564681082964]
+Testing on Task A:  [0.005149653553962708, 68.7, 90.1625, 198.54396877288818]
+Testing on Task B:  [0.016197562217712402, 59.8, 93.3, 225.44537506103515]
+Testing on Task C:  [0.015465211868286134, 63.7, 96.0, 179.4367462158203]
+Best Acc:  68.975
+
+Epoch: [73 | 90] LR: 0.000100
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.0898284912109375, 0.0, 0.0, 0.127503152936697]
+Testing on Task A:  [0.005133172869682312, 68.7, 90.175, 198.5533945083618]
+Testing on Task B:  [0.017030167579650878, 59.8, 93.3, 225.47238311767578]
+Testing on Task C:  [0.017711710929870606, 63.7, 96.0, 179.4374740600586]
+Best Acc:  68.975
+
+Epoch: [74 | 90] LR: 0.000100
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09155973792076111, 0.0, 0.0, 0.1304583791643381]
+Testing on Task A:  [0.005242705345153809, 68.7125, 90.1625, 198.55858173370362]
+Testing on Task B:  [0.016710734367370604, 59.9, 93.3, 225.48438110351563]
+Testing on Task C:  [0.01813483238220215, 63.7, 96.0, 179.41712799072266]
+Best Acc:  68.975
+
+Epoch: [75 | 90] LR: 0.000100
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.08997029066085815, 0.0, 0.0, 0.14006638247519732]
+Testing on Task A:  [0.004883110523223877, 68.7125, 90.1625, 198.5604642868042]
+Testing on Task B:  [0.017073559761047363, 59.9, 93.3, 225.48708801269532]
+Testing on Task C:  [0.016731810569763184, 63.7, 96.0, 179.41693725585938]
+Best Acc:  68.975
+
+Epoch: [76 | 90] LR: 0.000100
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09107691049575806, 0.0, 0.0, 0.13071082159876823]
+Testing on Task A:  [0.004884195327758789, 68.7125, 90.175, 198.56832304000855]
+Testing on Task B:  [0.016826438903808593, 59.8, 93.3, 225.4931869506836]
+Testing on Task C:  [0.016660785675048827, 63.8, 96.0, 179.4483612060547]
+Best Acc:  68.975
+
+Epoch: [77 | 90] LR: 0.000100
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09166952967643738, 0.0, 0.0, 0.12490662280470133]
+Testing on Task A:  [0.004843294620513916, 68.7, 90.1625, 198.5828275680542]
+Testing on Task B:  [0.017214179039001465, 59.8, 93.3, 225.49225158691405]
+Testing on Task C:  [0.01718626022338867, 63.9, 96.0, 179.46334075927734]
+Best Acc:  68.975
+
+Epoch: [78 | 90] LR: 0.000100
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09236365556716919, 0.0, 0.0, 0.12689715065062046]
+Testing on Task A:  [0.004819956421852112, 68.6875, 90.1375, 198.6033203125]
+Testing on Task B:  [0.017507123947143554, 59.7, 93.3, 225.52047119140624]
+Testing on Task C:  [0.017134618759155274, 63.9, 96.0, 179.4914794921875]
+Best Acc:  68.975
+
+Epoch: [79 | 90] LR: 0.000100
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.0901823341846466, 0.0, 0.0, 0.12463635019958019]
+Testing on Task A:  [0.004964292049407959, 68.6875, 90.1375, 198.60668563842773]
+Testing on Task B:  [0.016913676261901857, 59.7, 93.3, 225.5306411743164]
+Testing on Task C:  [0.017166662216186523, 63.9, 96.0, 179.4738571166992]
+Best Acc:  68.975
+
+Epoch: [80 | 90] LR: 0.000100
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09286022186279297, 0.0, 0.0, 0.12718412466347218]
+Testing on Task A:  [0.0049231618642807005, 68.6875, 90.1375, 198.61214838027954]
+Testing on Task B:  [0.015088748931884766, 59.7, 93.3, 225.53658142089844]
+Testing on Task C:  [0.017052507400512694, 63.9, 96.0, 179.47471313476564]
+Best Acc:  68.975
+
+Epoch: [81 | 90] LR: 0.000100
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09308639168739319, 0.0, 0.0, 0.1296781925484538]
+Testing on Task A:  [0.005054396390914917, 68.7, 90.1375, 198.62015161514282]
+Testing on Task B:  [0.01510322093963623, 59.7, 93.3, 225.54699096679687]
+Testing on Task C:  [0.017479085922241212, 63.9, 96.0, 179.49638671875]
+Best Acc:  68.975
+
+Epoch: [82 | 90] LR: 0.000100
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09246420860290527, 0.0, 0.0, 0.1304497979581356]
+Testing on Task A:  [0.004997172951698303, 68.7, 90.1375, 198.6287922859192]
+Testing on Task B:  [0.01467130184173584, 59.7, 93.3, 225.5551010131836]
+Testing on Task C:  [0.015263891220092774, 63.8, 96.0, 179.56082153320312]
+Best Acc:  68.975
+
+Epoch: [83 | 90] LR: 0.000100
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09383463859558105, 0.0, 0.0, 0.1215074472129345]
+Testing on Task A:  [0.004977020621299744, 68.725, 90.15, 198.6353232383728]
+Testing on Task B:  [0.015184950828552247, 59.7, 93.3, 225.5645751953125]
+Testing on Task C:  [0.015166115760803223, 63.8, 96.0, 179.62519073486328]
+Best Acc:  68.975
+
+Epoch: [84 | 90] LR: 0.000100
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09246322512626648, 0.0, 0.0, 0.1288630897179246]
+Testing on Task A:  [0.00512046217918396, 68.725, 90.15, 198.64509630203247]
+Testing on Task B:  [0.01693084239959717, 59.6, 93.3, 225.58271331787108]
+Testing on Task C:  [0.01506810188293457, 63.8, 96.0, 179.67276458740236]
+Best Acc:  68.975
+
+Epoch: [85 | 90] LR: 0.000100
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09119018912315369, 0.0, 0.0, 0.12464381754398346]
+Testing on Task A:  [0.005007961392402649, 68.725, 90.15, 198.64630880355836]
+Testing on Task B:  [0.016299724578857422, 59.6, 93.3, 225.59656982421876]
+Testing on Task C:  [0.015241098403930665, 63.8, 96.0, 179.67369842529297]
+Best Acc:  68.975
+
+Epoch: [86 | 90] LR: 0.000100
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.08883854746818542, 0.0, 0.0, 0.123625204898417]
+Testing on Task A:  [0.005061697959899902, 68.725, 90.15, 198.64750108718872]
+Testing on Task B:  [0.01695108413696289, 59.6, 93.3, 225.60848236083984]
+Testing on Task C:  [0.01597607135772705, 63.8, 96.0, 179.70724639892578]
+Best Acc:  68.975
+
+Epoch: [87 | 90] LR: 0.000100
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09066653251647949, 0.0, 0.0, 0.12784177623689175]
+Testing on Task A:  [0.005112937092781067, 68.725, 90.175, 198.64381532669069]
+Testing on Task B:  [0.01591458320617676, 59.7, 93.3, 225.6114761352539]
+Testing on Task C:  [0.01710047721862793, 63.8, 96.0, 179.7013381958008]
+Best Acc:  68.975
+
+Epoch: [88 | 90] LR: 0.000100
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.08957281708717346, 0.0, 0.0, 0.11762961279600859]
+Testing on Task A:  [0.005117699503898621, 68.7125, 90.175, 198.63671188354493]
+Testing on Task B:  [0.017040371894836426, 59.7, 93.3, 225.62111206054686]
+Testing on Task C:  [0.017807888984680175, 63.8, 96.0, 179.65052947998046]
+Best Acc:  68.975
+
+Epoch: [89 | 90] LR: 0.000100
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.08864176273345947, 0.0, 0.0, 0.12542715668678284]
+Testing on Task A:  [0.005105882883071899, 68.7125, 90.175, 198.63791007995604]
+Testing on Task B:  [0.016708636283874513, 59.7, 93.3, 225.6452163696289]
+Testing on Task C:  [0.018110156059265137, 63.8, 96.0, 179.629541015625]
+Best Acc:  68.975
+
+Epoch: [90 | 90] LR: 0.000100
+Training...
+ -> Progress: 25 done!
+ -> Progress: 50 done!
+ -> Progress: 62 done!
+ -> Progress: 88 done!
+ -> Progress: 100 done!
+Testing...
+Testing...
+Testing...
+
+Keys:  ['time', 'acc1', 'acc5', 'ce_loss']
+Training:  [0.09073156118392944, 0.0, 0.0, 0.13357317633926868]
+Testing on Task A:  [0.004948025941848755, 68.725, 90.1875, 198.64501056671142]
+Testing on Task B:  [0.01701464653015137, 59.7, 93.3, 225.6594436645508]
+Testing on Task C:  [0.016536545753479005, 63.8, 96.0, 179.6281967163086]
+Best Acc:  68.975
+
+ Namespace(arch='vgg16', checkpoint='checkpoint', data_avail=10, dataset='cifar100', epochs=90, gamma=0.1, include_t1_data=False, jobid='126874', logs='logs', lr=0.01, manualSeed=3868, momentum=0.9, mse_weight=0.01, schedule=[30, 60], task1={'class_id': [22, 39, 40, 86, 87, 5, 20, 25, 84, 94, 9, 10, 16, 28, 61, 4, 30, 55, 72, 95, 1, 32, 67, 73, 91, 54, 62, 70, 82, 92, 0, 51, 53, 57, 83, 6, 7, 14, 18, 24, 3, 42, 43, 88, 97, 12, 17, 37, 68, 76, 23, 33, 49, 60, 71, 26, 45, 77, 79, 99, 2, 11, 35, 46, 98, 27, 29, 44, 78, 93, 36, 50, 65, 74, 80, 47, 52, 56, 59, 96], 'out_id': 0, 'tid': 0}, task2={'class_id': [15, 19, 21, 31, 38, 34, 63, 64, 66, 75], 'out_id': 1, 'tid': 1}, task3={'class_id': [8, 13, 48, 58, 90, 41, 69, 81, 85, 89], 'out_id': 2, 'tid': 2}, task_set='vehicles10-large_animals10-reset80', test_batch=100, train_batch=128, weight_decay=0.0005, workers=4)
+
+real	3m31.839s
+user	4m36.317s
+sys	2m10.728s
+
+Ending script...
+Tue Mar  1 11:07:57 EST 2022
